@@ -26,6 +26,7 @@
 }
 
 
+
 *{
   margin:0;
   padding:0;
@@ -113,6 +114,7 @@ img{
 }
 
 
+
 .section{
   padding:80px 0;
 }
@@ -129,6 +131,7 @@ img{
   color:var(--text-hi);
   font-family:var(--mono);
 }
+
 
 
 .hero{
@@ -682,6 +685,7 @@ img{
 }
 
 
+
 .contact-intro{
   max-width:760px;
 
@@ -790,6 +794,7 @@ img{
 }
 
 
+
 .footer{
   border-top:1px solid var(--border);
 
@@ -799,6 +804,7 @@ img{
   text-align:center;
   color:var(--text-lo);
 }
+
 
 
 @media(max-width:900px){
