@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreyash Pathak — AI/ML Developer</title>
+  <meta name="description" content="Portfolio of Shreyash Pathak, B.Tech CSE (AI & ML) student at ABES Engineering College, Ghaziabad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <!-- ===== NAV ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">SP<span class="dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nl">About</a></li>
+      <li><a href="#experience" class="nl">Experience</a></li>
+      <li><a href="#projects" class="nl">Projects</a></li>
+      <li><a href="#skills" class="nl">Skills</a></li>
+      <li><a href="#certs" class="nl">Certs</a></li>
+      <li><a href="#contact" class="nl">Contact</a></li>
+      <li>
+        <!-- UPDATED RESUME LINK -->
+        <a href="https://drive.google.com/file/d/1ME1oIPx-Lw3KVRSZccPBNckNwyymcIpI/view?usp=sharing"
+           target="_blank"
+           rel="noopener"
+           class="nl resume-dl-btn">
+          Resume ↓
+        </a>
+      </li>
+    </ul>
+
+    <button class="burger" id="burger" aria-label="toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+
+      <!-- JS splits this into letter spans for the drop-in animation -->
+      <h1 class="hero-name" id="heroName" data-name="Shreyash Pathak">
+        Shreyash Pathak
+      </h1>
+
+      <h2 class="hero-role">
+        <span class="role-static">I build things with </span>
+        <span class="role-type" id="roleType"></span>
+        <span class="cursor-blink">|</span>
+      </h2>
+
+      <p class="hero-desc">
+        B.Tech CSE (AI &amp; ML) student at ABES Engineering College, Ghaziabad.
+        I enjoy turning messy real-world data into useful products — mostly with
+        Python, a bit of Flask, and a whole lot of trial and error.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">See My Work</a>
+        <a href="https://drive.google.com/file/d/1ME1oIPx-Lw3KVRSZccPBNckNwyymcIpI/view?usp=sharing" target="_blank" rel="noopener" download class="btn btn-ghost">Download Resume ↓</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/Shrshpathak" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/shreyash-pathak-sprp/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:shrshpathak@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-hint" aria-label="scroll down"><span></span></a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section about reveal">
+    <div class="container">
+      <h2 class="section-heading">About Me</h2>
+      <div class="about-grid">
+
+        <div class="about-text">
+          <p>
+            I'm a 4th-year Computer Science student specialising in
+            <strong>Artificial Intelligence and Machine Learning</strong> at
+            ABES Engineering College, Ghaziabad. CGPA — <strong>8.006</strong>,
+            batch of 2023–2027.
+          </p>
+          <p>
+            Most of my time goes into DSA and building  ML-powered projects and figuring out
+            how to actually deploy them — not just train a model and call it a day.
+            I enjoy the full loop: cleaning data, picking the right model, wrapping
+            it in a web app, and shipping something people can actually use.
+          </p>
+          <p>
+            Right now I'm deepening Python and picking up Django on the side. Outside
+            code I'm curious about cloud AI, contributing to open source when I can,
+            and trying to write commit messages that actually explain what changed.
+          </p>
+
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-label">Degree</span>
+              <span class="meta-val">B.Tech CSE (AI &amp; ML)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">College</span>
+              <span class="meta-val">ABES Engineering College</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">CGPA</span>
+              <span class="meta-val">8.006</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Batch</span>
+              <span class="meta-val">2023 – 2027</span>
+            </div>
+          </div>
+
+          <div class="coursework-block">
+            <h4 class="cw-title">Relevant Coursework</h4>
+            <ul class="cw-list">
+              <li>Data Structures &amp; Algorithms</li>
+              <li>Object-Oriented Programming (C++ &amp; Python)</li>
+              <li>Operating Systems</li>
+              <li>Database Management Systems</li>
+              <li>Computer Networks</li>
+              <li>Software Engineering</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-box reveal">
+            <span class="stat-num" data-target="8">0</span><span class="stat-dec">.006</span>
+            <span class="stat-lbl">CGPA</span>
+          </div>
+          <div class="stat-box reveal">
+            <span class="stat-num" data-target="4">0</span>
+            <span class="stat-lbl">Projects</span>
+          </div>
+          <div class="stat-box reveal">
+            <span class="stat-num" data-target="9">0</span>
+            <span class="stat-lbl">Certifications</span>
+          </div>
+          <div class="stat-box reveal">
+            <span class="stat-num" data-target="92">0</span><span class="stat-dec">%</span>
+            <span class="stat-lbl">Model Accuracy</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section experience reveal">
+  <div class="container">
+    <h2 class="section-heading">Experience</h2>
+
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-marker"></div>
+
+        <div class="tl-body">
+
+          <!-- DATE + CERTIFICATE LINK -->
+          <div class="tl-top-row">
+            <span class="tl-date">Apr 2025 – May 2025</span>
+
+            <!-- UPDATE YOUR CERTIFICATE LINK HERE -->
+            <a
+              href="https://drive.google.com/file/d/1gTT50F-HUEmFCdCgKG-426jN02frEKzv/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              class="exp-cert-btn"
+            >
+              View Certificate ↗
+            </a>
+          </div>
+
+          <h3 class="tl-title">
+            AI &amp; Cloud Virtual Internship
+          </h3>
+
+          <h4 class="tl-company">
+            Edunet Foundation &nbsp;·&nbsp;
+            AICTE &amp; Microsoft &nbsp;·&nbsp;
+            Remote
+          </h4>
+
+          <p class="tl-summary">
+            A 4-week programme covering Artificial Intelligence,
+            Machine Learning, Deep Learning, and Microsoft Azure
+            with hands-on projects, expert-led masterclasses,
+            and industry mentorship.
+          </p>
+
+          <div class="tl-highlights">
+
+            <div class="tl-hl-col">
+              <h5 class="tl-hl-title">Key Learning Areas</h5>
+
+              <ul class="tl-list">
+                <li>
+                  AI &amp; ML Fundamentals — data preprocessing,
+                  model training, evaluation, and ethical AI practices
+                </li>
+
+                <li>
+                  Supervised &amp; Unsupervised Learning —
+                  classification, regression, and clustering algorithms
+                </li>
+
+                <li>
+                  Generative AI &amp; Computer Vision —
+                  hands-on with Azure AI services
+                </li>
+
+                <li>
+                  Neural Networks &amp; Deep Learning —
+                  practical implementation on Azure
+                </li>
+              </ul>
+            </div>
+
+            <div class="tl-hl-col">
+              <h5 class="tl-hl-title">Achievements</h5>
+
+              <ul class="tl-list">
+                <li>
+                  Developed and submitted an ML project
+                  applying AI concepts to a real-world problem
+                </li>
+
+                <li>
+                  Completed Microsoft-certified courses
+                  in cloud computing and AI applications
+                </li>
+
+                <li>
+                  Built image classification models
+                  using Azure Custom Vision
+                </li>
+
+                <li>
+                  Participated in expert-led masterclasses
+                  on emerging AI trends
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="tl-tags">
+            <span>Python</span>
+            <span>Azure AI</span>
+            <span>Deep Learning</span>
+            <span>Computer Vision</span>
+            <span>Microsoft Azure</span>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- ===== PROJECTS ===== -->
+  <!-- ===== PROJECTS ===== -->
+<<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section projects reveal">
+  <div class="container">
+    <h2 class="section-heading">Projects</h2>
+
+    <div class="projects-grid">
+
+      <!-- 1: Leaf Scan -->
+      <div class="proj-card reveal">
+        <div class="proj-top">
+
+          <div class="proj-icon">🌿</div>
+
+          <div class="proj-links">
+
+            <!-- GITHUB -->
+            <a
+              href="https://github.com/Shrshpathak/Leaf-Scan"
+              target="_blank"
+              rel="noopener"
+              title="GitHub"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+        <h3 class="proj-title">
+          Crop Disease Detection &amp; Recommendation System
+        </h3>
+
+        <p class="proj-desc">
+          Detects plant diseases from leaf images with
+          <strong>92.07% accuracy</strong>
+          using deep learning and recommends crops/fertilisers
+          based on soil nutrients and environmental data.
+        </p>
+
+        <ul class="proj-tags">
+          <li>Python</li>
+          <li>TensorFlow</li>
+          <li>Keras</li>
+          <li>Scikit-learn</li>
+          <li>Streamlit</li>
+        </ul>
+      </div>
+
+      <!-- 2: Smart Safar -->
+      <div class="proj-card reveal">
+        <div class="proj-top">
+
+          <div class="proj-icon">✈️</div>
+
+          <div class="proj-links">
+
+            <!-- LIVE -->
+            <a
+              href="https://smartsafar-1.onrender.com/"
+              target="_blank"
+              rel="noopener"
+              title="Live Demo"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/>
+                <polyline points="15 3 21 3 21 9"/>
+                <line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+
+        <h3 class="proj-title">
+          Smart Safar — AI-Powered Travel Planner
+        </h3>
+
+        <p class="proj-desc">
+          Full-stack web app using live weather and AQI APIs
+          to recommend best travel times, nearby attractions,
+          hotels, and tourism insights.
+        </p>
+
+        <ul class="proj-tags">
+          <li>Python</li>
+          <li>Flask</li>
+          <li>JavaScript</li>
+          <li>OpenWeather API</li>
+          <li>PyTrends</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section skills reveal">
+    <div class="container">
+      <h2 class="section-heading">Technical Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group reveal">
+          <h3 class="sg-title"><span class="sg-icon">{ }</span> Languages</h3>
+          <div class="pill-wrap">
+            <span class="pill pill-strong">Python</span>
+            <span class="pill">C / C++</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">HTML &amp; CSS</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="sg-title"><span class="sg-icon">🧰</span> Frameworks</h3>
+          <div class="pill-wrap">
+            <span class="pill">Flask</span>
+            <span class="pill">Streamlit</span>
+            <span class="pill pill-learning">Django <em>learning</em></span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="sg-title"><span class="sg-icon">📦</span> Libraries</h3>
+          <div class="pill-wrap">
+            <span class="pill">NumPy</span>
+            <span class="pill">Pandas</span>
+            <span class="pill">Scikit-learn</span>
+            <span class="pill">TensorFlow</span>
+            <span class="pill">Keras</span>
+            <span class="pill">Matplotlib</span>
+            <span class="pill">Seaborn</span>
+            <span class="pill">PyTrends</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="sg-title"><span class="sg-icon">🛠</span> Tools &amp; Cloud</h3>
+          <div class="pill-wrap">
+            <span class="pill">Git &amp; GitHub</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">Google Colab</span>
+            <span class="pill">PyCharm</span>
+            <span class="pill">IntelliJ IDEA</span>
+            <span class="pill">Microsoft Azure</span>
+            <span class="pill">AWS</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="sg-title"><span class="sg-icon">📚</span> CS Fundamentals</h3>
+          <div class="pill-wrap">
+            <span class="pill">OOP (C++ &amp; Python)</span>
+            <span class="pill">Operating Systems</span>
+            <span class="pill">DBMS</span>
+            <span class="pill">Computer Networks</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal">
+          <h3 class="sg-title"><span class="sg-icon">🤝</span> Soft Skills</h3>
+          <div class="pill-wrap">
+            <span class="pill">Problem Solving</span>
+            <span class="pill">Self-Learning</span>
+            <span class="pill">Presentation</span>
+            <span class="pill">Adaptability</span>
+             <span class="pill">Leadership</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- currently learning banner -->
+      <div class="learning-banner reveal">
+        <span class="lb-pulse"></span>
+        <p class="lb-text">
+          Currently levelling up &nbsp;—&nbsp;
+          <strong>Django Backend Development</strong>,
+            cloud AI services, and more!
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS ===== -->
+  <section id="certs" class="section certs reveal">
+    <div class="container">
+      <h2 class="section-heading">Certifications</h2>
+      <div class="certs-grid">
+
+        <a href="https://www.theforage.com/completion-certificates/ifobHAoMjQs9s6bKS/gMTdCXwDdLYoXZ3wG_ifobHAoMjQs9s6bKS_69f228a6a326003608810890_1777997391989_completion_certificate.pdf"
+           target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-badge">📊</div>
+          <div class="cert-info">
+            <h3>Tata — GenAI Powered Data Analytics Simulation</h3>
+            <p>Forage &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; <em>Model Validation, AI Analytics</em></p>
+            <span class="cert-link-hint">View Credential ↗</span>
+          </div>
+        </a>
+
+        <a href="https://www.theforage.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_69f228a6a326003608810890_1777899802309_completion_certificate.pdf"
+           target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-badge">💡</div>
+          <div class="cert-info">
+            <h3>Deloitte — Technology Job Simulation</h3>
+            <p>Forage &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; <em>Data Structures, Python +4 skills</em></p>
+            <span class="cert-link-hint">View Credential ↗</span>
+          </div>
+        </a>
+
+        <a href="https://www.credly.com/badges/f9b2d6e0-f0b8-4f74-8e62-c3bf81eb1d31/linked_in_profile"
+           target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-badge">🤖</div>
+          <div class="cert-info">
+            <h3>Develop GenAI Apps with Gemini &amp; Streamlit</h3>
+            <p>Google / Credly &nbsp;·&nbsp; May 2024 &nbsp;·&nbsp; <em>Python, Streamlit</em></p>
+            <span class="cert-link-hint">View Badge ↗</span>
+          </div>
+        </a>
+
+        <a href="https://www.credly.com/badges/87b0a0a5-cacd-4db6-8c7b-356abc879983/linked_in_profile"
+           target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-badge">🎯</div>
+          <div class="cert-info">
+            <h3>Prompt Design in Vertex AI</h3>
+            <p>Google / Credly &nbsp;·&nbsp; May 2024 &nbsp;·&nbsp; <em>Python, Vertex AI</em></p>
+            <span class="cert-link-hint">View Badge ↗</span>
+          </div>
+        </a>
+
+        <a href="https://www.cloudskillsboost.google/public_profiles/965d7a2b-4539-4ccb-93af-6587029ed421/badges/9013215"
+           target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-badge">🌐</div>
+          <div class="cert-info">
+            <h3>Introduction to Generative AI</h3>
+            <p>Google &nbsp;·&nbsp; May 2024 &nbsp;·&nbsp; <em>Credential #9013215</em></p>
+            <span class="cert-link-hint">View Credential ↗</span>
+          </div>
+        </a>
+
+        <a href="https://www.cloudskillsboost.google/public_profiles/965d7a2b-4539-4ccb-93af-6587029ed421/badges/9012296"
+           target="_blank" rel="noopener" class="cert-card reveal">
+          <div class="cert-badge">🏅</div>
+          <div class="cert-info">
+            <h3>Level 3: GenAIus Registries</h3>
+            <p>Google &nbsp;·&nbsp; May 2024 &nbsp;·&nbsp; <em>Study Jam Achievement</em></p>
+            <span class="cert-link-hint">View Credential ↗</span>
+          </div>
+        </a>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">☁️</div>
+          <div class="cert-info">
+            <h3>AWS Services Fundamentals for Beginners</h3>
+            <p>Simplilearn &nbsp;·&nbsp; Dec 2024 &nbsp;·&nbsp; <em>Credential ID 7655276</em></p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">🤖</div>
+          <div class="cert-info">
+            <h3>Google Gen AI Study Jam</h3>
+            <p>GDSC — BPIT &nbsp;·&nbsp; Apr 2024 &nbsp;·&nbsp; <em>Machine Learning, AI</em></p>
+          </div>
+        </div>
+
+        <div class="cert-card reveal">
+          <div class="cert-badge">🏆</div>
+          <div class="cert-info">
+            <h3>Smart India Hackathon 2025</h3>
+            <p>Internal College Round — <strong>Shortlisted</strong> as Team Neuronauts, Project MAITRI</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section contact reveal">
+    <div class="container">
+      <h2 class="section-heading">Get In Touch</h2>
+      <p class="contact-intro">
+        Looking for internship opportunities in ML, AI, and software development.
+        Have a project idea, an opportunity, or just want to say hi — my inbox
+        is always open.
+      </p>
+
+      <div class="contact-grid">
+
+        <div class="contact-links reveal">
+          <a href="mailto:shrshpathak@gmail.com" class="clink">
+            <span class="clink-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </span>
+            <span class="clink-text">
+              <strong>Email</strong>
+              shrshpathak@gmail.com
+            </span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/shreyash-pathak-sprp/" target="_blank" rel="noopener" class="clink">
+            <span class="clink-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </span>
+            <span class="clink-text">
+              <strong>LinkedIn</strong>
+              shreyash-pathak-sprp
+            </span>
+          </a>
+
+          <a href="https://github.com/Shrshpathak" target="_blank" rel="noopener" class="clink">
+            <span class="clink-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </span>
+            <span class="clink-text">
+              <strong>GitHub</strong>
+              Shrshpathak
+            </span>
+          </a>
+
+          <a href="Shreyash-Pathak-Resume.pdf" download class="clink">
+            <span class="clink-icon">📄</span>
+            <span class="clink-text">
+              <strong>Resume</strong>
+              Download PDF ↓
+            </span>
+          </a>
+
+          <div class="clink no-hover">
+            <span class="clink-icon">📍</span>
+            <span class="clink-text">
+              <strong>Location</strong>
+              Ghaziabad, Uttar Pradesh
+            </span>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field-group">
+            <label for="fname">Your Name</label>
+            <input type="text" id="fname" name="name" placeholder="Ravi Sharma" required />
+          </div>
+          <div class="field-group">
+            <label for="femail">Email Address</label>
+            <input type="email" id="femail" name="email" placeholder="ravi@example.com" required />
+          </div>
+          <div class="field-group">
+            <label for="fmsg">Message</label>
+            <textarea id="fmsg" name="message" rows="5" placeholder="Hey, I have an interesting opportunity…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-w" id="sendBtn">Send Message</button>
+          <p class="form-note" id="formNote" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by <strong>Shreyash Pathak</strong> &nbsp;·&nbsp; 2025</p>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
